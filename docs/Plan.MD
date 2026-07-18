@@ -133,9 +133,9 @@ The mark should work at 16px, in one color, and without surrounding text. Prefer
 | --- | --- | --- |
 | ~~P0~~ | ~~Typography, semantic palette, hero hierarchy~~ | ~~Establishes immediate recognition and readability~~ |
 | ~~P0~~ | ~~Project imagery and real project actions~~ | ~~Converts interest into evidence of work~~ |
-| P1 | Header, monogram, section rhythm | Makes the experience feel owned rather than templated |
-| P1 | Accessible interaction and responsive refinement | Preserves quality for all visitors and devices |
-| P2 | Subtle ambient texture and motion refinements | Adds polish once content and system are strong |
+| ~~P1~~ | ~~Header, monogram, section rhythm~~ | ~~Makes the experience feel owned rather than templated~~ |
+| ~~P1~~ | ~~Accessible interaction and responsive refinement~~ | ~~Preserves quality for all visitors and devices~~ |
+| ~~P2~~ | ~~Subtle ambient texture and motion refinements~~ | ~~Adds polish once content and system are strong~~ |
 
 ## Measures of success
 

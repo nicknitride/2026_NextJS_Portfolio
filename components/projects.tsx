@@ -6,10 +6,10 @@ export default function Projects() {
   const { projects, person } = portfolioContent
 
   return (
-    <section id="projects" className="py-20 px-6">
+    <section id="projects" aria-labelledby="projects-title" className="px-6 py-20 sm:py-28">
       <div className="max-w-6xl mx-auto">
-        <p className="section-kicker mb-3">Selected work</p>
-        <h2 className="text-4xl sm:text-5xl font-bold mb-12">{projects.title}</h2>
+        <p className="section-kicker mb-3">03 / Selected work</p>
+        <h2 id="projects-title" className="mb-12 text-4xl font-bold tracking-tight sm:text-5xl">{projects.title}</h2>
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {projects.entries.map((project) => (

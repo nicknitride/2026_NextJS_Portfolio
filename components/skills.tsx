@@ -6,13 +6,14 @@ export default function Skills() {
   const { skills } = portfolioContent
 
   return (
-    <section className="py-20 px-6">
+    <section id="skills" aria-labelledby="skills-title" className="px-6 py-20 sm:py-28">
       <div className="max-w-4xl mx-auto">
-        <h2 className="text-4xl sm:text-5xl font-bold mb-12">{skills.title}</h2>
+        <p className="section-kicker mb-3">04 / Toolkit</p>
+        <h2 id="skills-title" className="mb-12 text-4xl font-bold tracking-tight sm:text-5xl">{skills.title}</h2>
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {skills.categories.map((category) => (
-            <div key={category.category} className="bg-card border border-border rounded-xl p-6">
+            <article key={category.category} className="rounded-xl border border-border bg-card p-6">
               <h3 className="text-lg font-semibold text-accent mb-4">
                 {category.category}
               </h3>
@@ -20,14 +21,14 @@ export default function Skills() {
                 {category.skills.map((skill, skillIdx) => (
                   <div
                     key={skillIdx}
-                    className="flex items-center gap-3 text-muted-foreground hover:text-foreground transition-colors"
+                    className="flex items-center gap-3 text-muted-foreground"
                   >
-                    <span className="text-accent">▹</span>
+                    <span aria-hidden="true" className="text-[var(--signal)]">▹</span>
                     <span>{skill}</span>
                   </div>
                 ))}
               </div>
-            </div>
+            </article>
           ))}
         </div>
       </div>

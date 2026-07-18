@@ -11,10 +11,11 @@ export default function Contact() {
 
     
     {isContactEnabled ? (
-      <section className="py-20 px-6">
+      <section id="contact" aria-labelledby="contact-title" className="px-6 py-20 sm:py-28">
         <div className="max-w-4xl mx-auto">
           <div className="text-center space-y-6">
-            <h2 className="text-4xl sm:text-5xl font-bold">{contact.title}</h2>
+            <p className="section-kicker">05 / Contact</p>
+            <h2 id="contact-title" className="text-4xl sm:text-5xl font-bold">{contact.title}</h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
               {contact.description}
             </p>
@@ -22,7 +23,7 @@ export default function Contact() {
             <div className="pt-8">
               <a
                 href={`mailto:${person.email}`}
-                className="inline-flex items-center gap-2 bg-accent hover:bg-accent/90 text-accent-foreground px-8 py-3 rounded-lg font-semibold transition-colors"
+                className="inline-flex items-center gap-2 rounded-lg bg-primary px-8 py-3 font-semibold text-primary-foreground transition-colors hover:bg-primary/90 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ring"
               >
                 {portfolioContent.navigation.contact}
               </a>
@@ -33,7 +34,7 @@ export default function Contact() {
           <div className="max-w-sm mx-auto mt-16">
             <a
               href={`mailto:${person.email}`}
-              className="bg-card border border-border rounded-lg p-6 hover:border-accent/50 transition-colors text-center group"
+              className="block rounded-lg border border-border bg-card p-6 text-center transition-colors hover:border-accent/50 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-ring"
             >
               <div className="text-4xl mb-4">✉</div>
               <h3 className="font-semibold text-foreground mb-2">{contact.emailLabel}</h3>
@@ -46,13 +47,13 @@ export default function Contact() {
 
 
       {/* Footer */}
-      <footer className="border-t border-border py-8 px-6">
+      <footer id={isContactEnabled ? undefined : 'contact'} className="border-t border-border py-8 px-6">
         <div className="max-w-4xl mx-auto">
           <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
             <p className="text-muted-foreground text-sm">
               {contact.footer}
             </p>
-            <a href={`mailto:${person.email}`} className="text-muted-foreground hover:text-accent transition-colors">
+            <a href={`mailto:${person.email}`} className="rounded text-muted-foreground transition-colors hover:text-accent focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-ring">
               {contact.emailDescription}
             </a>
           </div>

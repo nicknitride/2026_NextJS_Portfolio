@@ -1,10 +1,16 @@
 FROM node:22-alpine
+
 WORKDIR /app
-COPY package.json pnpm-lock.yaml ./
+
 RUN corepack enable
+
+COPY package.json pnpm-lock.yaml pnpm-workspace.yaml ./
 RUN pnpm install
+
 COPY . .
+
 RUN pnpm build
-RUN pnpm approve-builds --all
+
 EXPOSE 3000
+
 CMD ["pnpm", "start"]

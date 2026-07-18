@@ -24,9 +24,12 @@ export default function Projects() {
               </div>
 
               <div className="p-6">
-              <h3 className="text-xl font-semibold text-foreground mb-3">
+                <a href={project.link} target='_blank'>
+                              <h3 className="text-xl font-semibold text-foreground mb-3">
                 {project.title}
               </h3>
+                </a>
+
 
               <p className="text-muted-foreground mb-6">
                 {project.description}

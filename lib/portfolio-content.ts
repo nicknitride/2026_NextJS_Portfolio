@@ -74,6 +74,7 @@ export const portfolioContent = {
         description:
           'A full-stack fitness and nutrition tracker with encrypted accounts and separated user data.',
         technologies: ['Vite', 'TypeScript', 'React', 'MySQL', 'Express.js'],
+        link:'https://github.com/nicknitride/intellifit_project'
       },
       {
         title: 'CogniPill',
@@ -82,6 +83,7 @@ export const portfolioContent = {
         description:
           'A researched hardware and software pill-dispensing prototype designed to support aging populations safely and accessibly.',
         technologies: ['Figma', 'User research', 'Usability testing', 'Accessibility'],
+        link:''
       },
       {
         title: 'Airline Ticket System',
@@ -90,6 +92,7 @@ export const portfolioContent = {
         description:
           'A Django-based airline ticket system built as part of a Python web-development course.',
         technologies: ['Python', 'Django'],
+        link:''
       },
       {
         title: 'Dockerized Portfolio Site',
@@ -98,6 +101,7 @@ export const portfolioContent = {
         description:
           'A personal portfolio site packaged for repeatable deployment using Docker.',
         technologies: ['Docker', 'Web deployment'],
+        link:''
       },
     ],
   },

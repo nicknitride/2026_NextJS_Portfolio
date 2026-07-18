@@ -66,24 +66,32 @@ export const portfolioContent = {
     entries: [
       {
         title: 'IntelliFit',
+        category: 'Full-stack web application',
+        visual: 'fitness',
         description:
           'A full-stack fitness and nutrition tracker with encrypted accounts and separated user data.',
         technologies: ['Vite', 'TypeScript', 'React', 'MySQL', 'Express.js'],
       },
       {
         title: 'CogniPill',
+        category: 'Research & hardware prototype',
+        visual: 'health',
         description:
           'A researched hardware and software pill-dispensing prototype designed to support aging populations safely and accessibly.',
         technologies: ['Figma', 'User research', 'Usability testing', 'Accessibility'],
       },
       {
         title: 'Airline Ticket System',
+        category: 'Web application',
+        visual: 'travel',
         description:
           'A Django-based airline ticket system built as part of a Python web-development course.',
         technologies: ['Python', 'Django'],
       },
       {
         title: 'Dockerized Portfolio Site',
+        category: 'Developer experience',
+        visual: 'deploy',
         description:
           'A personal portfolio site packaged for repeatable deployment using Docker.',
         technologies: ['Docker', 'Web deployment'],

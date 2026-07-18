@@ -2,10 +2,11 @@ import { Analytics } from '@vercel/analytics/next'
 import type { Metadata, Viewport } from 'next'
 import './globals.css'
 import AnimatedBackground from '@/components/animated-bg'
+import { portfolioContent } from '@/lib/portfolio-content'
 
 export const metadata: Metadata = {
-  title: 'Developer Portfolio',
-  description: 'Full-stack Software Engineer - Modern Portfolio 2026',
+  title: portfolioContent.metadata.title,
+  description: portfolioContent.metadata.description,
   generator: 'v0.app',
   icons: {
     icon: [

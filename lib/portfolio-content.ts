@@ -1,4 +1,7 @@
 export const portfolioContent = {
+  heroComponent:{
+    herotext:'N. Pardines 🐈',
+  },
   person: {
     name: 'Nicholo Pardines',
     email: 'nicholo.pardines@outlook.com',

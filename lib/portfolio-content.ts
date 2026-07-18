@@ -1,3 +1,6 @@
+import intelliFitImage from '@/assets/images/intellifit.png'
+import cognipillImage from '@/assets/images/cognipill.png'
+
 export const portfolioContent = {
   heroComponent:{
     herotext:'N. Pardines 🐈',
@@ -64,6 +67,7 @@ export const portfolioContent = {
   },
   projects: {
     title: 'Projects',
+    bottomHighlight:'Project Link',
     codeLabel: 'Project details',
     liveLabel: 'View project',
     entries: [
@@ -74,7 +78,8 @@ export const portfolioContent = {
         description:
           'A full-stack fitness and nutrition tracker with encrypted accounts and separated user data.',
         technologies: ['Vite', 'TypeScript', 'React', 'MySQL', 'Express.js'],
-        link:'https://github.com/nicknitride/intellifit_project'
+        link:'https://github.com/nicknitride/intellifit_project',
+        image: intelliFitImage,
       },
       {
         title: 'CogniPill',
@@ -83,7 +88,8 @@ export const portfolioContent = {
         description:
           'A researched hardware and software pill-dispensing prototype designed to support aging populations safely and accessibly.',
         technologies: ['Figma', 'User research', 'Usability testing', 'Accessibility'],
-        link:''
+        link:'https://canva.link/izu6aeqgo0q2hym',
+        image:cognipillImage
       },
       {
         title: 'Airline Ticket System',

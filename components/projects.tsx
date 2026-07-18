@@ -1,5 +1,6 @@
 'use client'
 
+import Image from 'next/image'
 import { portfolioContent } from '@/lib/portfolio-content'
 
 export default function Projects() {
@@ -18,6 +19,15 @@ export default function Projects() {
               className="group overflow-hidden rounded-xl border border-border bg-card transition-all duration-300 hover:-translate-y-1 hover:border-accent/60 hover:shadow-xl hover:shadow-black/20"
             >
               <div className={`relative h-44 overflow-hidden border-b border-border bg-gradient-to-br ${visualClasses[project.visual]}`}>
+                {project.image && (
+                  <Image
+                    src={project.image}
+                    alt={`${project.title} project preview`}
+                    fill
+                    sizes="(min-width: 768px) 50vw, 100vw"
+                    className="object-cover opacity-0 transition-all duration-300 group-hover:scale-105 group-hover:opacity-100"
+                  />
+                )}
                 <div className="absolute inset-0 opacity-70 [background-image:linear-gradient(rgba(244,247,251,0.11)_1px,transparent_1px),linear-gradient(90deg,rgba(244,247,251,0.11)_1px,transparent_1px)] [background-size:24px_24px]" />
                 <div className="absolute left-6 top-6 rounded-md border border-white/20 bg-background/50 px-3 py-2 font-mono text-xs text-white backdrop-blur-sm">{project.category}</div>
                 <div className="absolute -bottom-6 right-7 grid size-24 rotate-12 place-items-center rounded-2xl border border-white/15 bg-background/35 font-mono text-3xl font-bold text-white/90 backdrop-blur-sm transition-transform duration-300 group-hover:rotate-6">{visualMarks[project.visual]}</div>
@@ -47,8 +57,8 @@ export default function Projects() {
                 ))}
               </div>
 
-              <a href={`mailto:${person.email}?subject=${encodeURIComponent(`Project inquiry: ${project.title}`)}`} className="inline-flex items-center gap-2 font-mono text-xs font-semibold uppercase tracking-[0.12em] text-[var(--signal)] transition-colors hover:text-foreground focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-ring">
-                Discuss this project <span aria-hidden="true">↗</span>
+              <a href={project.link} target='_blank' className="inline-flex items-center gap-2 font-mono text-xs font-semibold uppercase tracking-[0.12em] text-[var(--signal)] transition-colors hover:text-foreground focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-ring">
+                <span aria-hidden="true">↗ {projects.bottomHighlight} </span>
               </a>
               </div>
             </article>

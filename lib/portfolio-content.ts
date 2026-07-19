@@ -80,6 +80,7 @@ export const portfolioContent = {
         technologies: ['Vite', 'TypeScript', 'React', 'MySQL', 'Express.js'],
         link:'https://github.com/nicknitride/intellifit_project',
         image: intelliFitImage,
+        isHidden: false
       },
       {
         title: 'CogniPill',
@@ -89,7 +90,8 @@ export const portfolioContent = {
           'A researched hardware and software pill-dispensing prototype designed to support aging populations safely and accessibly.',
         technologies: ['Figma', 'User research', 'Usability testing', 'Accessibility'],
         link:'https://canva.link/izu6aeqgo0q2hym',
-        image:cognipillImage
+        image:cognipillImage,
+        isHidden: false
       },
       {
         title: 'Airline Ticket System',
@@ -98,7 +100,8 @@ export const portfolioContent = {
         description:
           'A Django-based airline ticket system built as part of a Python web-development course.',
         technologies: ['Python', 'Django'],
-        link:''
+        link:'',
+        isHidden:true,
       },
       {
         title: 'Dockerized Portfolio Site',
@@ -107,7 +110,8 @@ export const portfolioContent = {
         description:
           'A personal portfolio site packaged for repeatable deployment using Docker.',
         technologies: ['Docker', 'Web deployment'],
-        link:''
+        link:'',
+        isHidden:true,
       },
     ],
   },

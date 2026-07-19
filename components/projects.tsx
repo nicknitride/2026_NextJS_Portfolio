@@ -14,6 +14,7 @@ export default function Projects() {
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {projects.entries.map((project) => (
+            !project.isHidden &&
             <article
               key={project.title}
               className="group overflow-hidden rounded-xl border border-border bg-card transition-all duration-300 hover:-translate-y-1 hover:border-accent/60 hover:shadow-xl hover:shadow-black/20"

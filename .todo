@@ -1,0 +1,12 @@
+[
+  {
+    "id": "mrsq73r0a1ocvj0k4l9",
+    "text": "add a terminal to the right side of the hero",
+    "isCompleted": false,
+    "source": "codebase",
+    "file": "/Users/nicholopardines/Desktop/Github_Projects/2026_Portfolio/components/hero.tsx",
+    "line": 14,
+    "dateCreated": "2026-07-20T04:29:47.580Z",
+    "category": "feature"
+  }
+]

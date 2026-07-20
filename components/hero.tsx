@@ -12,6 +12,7 @@ export default function Hero() {
       <div className="max-w-4xl w-full relative z-10">
         <div className="space-y-9">
           <div className="space-y-5">
+            {/* TODO : add a terminal to the right side of the hero */}
             <div className="flex items-center gap-3">
               <span className="grid size-10 place-items-center rounded-xl border border-accent/40 bg-accent/10 font-mono text-sm font-bold text-accent">NP</span>
               <p className="section-kicker">{hero.upperText}</p>

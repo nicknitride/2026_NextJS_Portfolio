@@ -20,7 +20,7 @@ export const portfolioContent = {
   },
   hero: {
     headingStart: 'Software Engineer @ GCash',
-    upperText: 'Fullstack Web Developer | Linux and FOSS Enthusiast | Java & Springg',
+    upperText: 'Fullstack Web Developer | Linux and FOSS Enthusiast | Java & Spring',
     summary:
       'Building secure, practical web solutions with React, TypeScript, and backend services.',
   },

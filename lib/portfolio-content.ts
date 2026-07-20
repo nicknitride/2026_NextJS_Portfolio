@@ -19,8 +19,8 @@ export const portfolioContent = {
     contact: 'Get in Touch',
   },
   hero: {
-    headingStart: 'Nicholo Pardines',
-    headingAccent: ' | 👨🏽‍💻',
+    headingStart: 'Software Engineer @ GCash',
+    upperText: 'Fullstack Web Developer | Linux and FOSS Enthusiast | Java & Springg',
     summary:
       'Building secure, practical web solutions with React, TypeScript, and backend services.',
   },

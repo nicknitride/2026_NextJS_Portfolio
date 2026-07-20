@@ -14,7 +14,7 @@ export default function Hero() {
           <div className="space-y-5">
             <div className="flex items-center gap-3">
               <span className="grid size-10 place-items-center rounded-xl border border-accent/40 bg-accent/10 font-mono text-sm font-bold text-accent">NP</span>
-              <p className="section-kicker">Software Engineer · Quezon City, PH</p>
+              <p className="section-kicker">{hero.upperText}</p>
             </div>
             <h1 className="max-w-4xl text-5xl font-bold tracking-[-0.045em] text-balance sm:text-6xl lg:text-7xl">
               Building <span className="text-accent">reliable systems</span> for real-world products.

@@ -31,8 +31,11 @@ export default function Hero() {
             <a href="#projects" className="rounded-lg bg-primary px-6 py-3 font-semibold text-primary-foreground transition-all hover:-translate-y-0.5 hover:bg-primary/90 hover:shadow-lg hover:shadow-primary/25 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ring">
               {navigation.projects} →
             </a>
-            <a href={`mailto:${person.email}`} className="rounded-lg border border-border bg-card/60 px-6 py-3 font-semibold text-foreground transition-colors hover:border-accent/60 hover:bg-secondary focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ring">
-              {navigation.contact}
+            <a href={'https://www.linkedin.com/in/nicholo-pardines-303501364'} target='_blank' rel="noreferrer" className="inline-flex items-center justify-center gap-2 rounded-lg border border-border bg-card/60 px-6 py-3 font-semibold text-foreground transition-colors hover:border-accent/60 hover:bg-secondary focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ring">
+              <svg viewBox="0 0 24 24" aria-hidden="true" className="size-4 fill-current">
+                <path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM3 9h4v12H3V9Zm6.5 0h3.84v1.64h.05c.54-1.02 1.84-2.1 3.78-2.1C21.2 8.54 22 11.2 22 14.66V21h-4v-5.62c0-1.34-.02-3.06-1.86-3.06-1.86 0-2.14 1.46-2.14 2.96V21h-4V9Z" />
+              </svg>
+              {navigation.linkedin}
             </a>
           </div>
 

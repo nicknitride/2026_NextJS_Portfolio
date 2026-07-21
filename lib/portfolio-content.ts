@@ -1,5 +1,6 @@
 import intelliFitImage from '@/assets/images/intellifit.png'
 import cognipillImage from '@/assets/images/cognipill.png'
+import kcnabadge from '@/assets/badges/KCNA_badge.png'
 
 export type Certification = {
   name: string
@@ -24,7 +25,7 @@ export const portfolioContent = {
   },
   navigation: {
     projects: 'View Projects',
-    contact: 'Get in Touch',
+    linkedin: 'Let’s Connect',
   },
   hero: {
     headingStart: 'Software Engineer @ GCash',
@@ -188,8 +189,8 @@ export const portfolioContent = {
     issuedAtLabel: 'Issued',
     credentialLabel: 'View {name} credential',
     entries: [
-      { name: 'OCA 8' , issuedAt:'2025', issuer:'Oracle'},
-      { name: 'KCNA' , issuedAt:'2025', issuer:'The Linux Foundation'},
+      { name: 'OCA 8' , issuedAt:'2025', issuer:'Oracle',badge:'☕️', credentialUrl:'https://catalog-education.oracle.com/ords/certview/sharebadge?id=B7BB67DE24C8FDEE4E0B1B27E99ACD24661165BEEC432C9AC1C98C9817CF9206'},
+      { name: 'KCNA' , issuedAt:'2025', issuer:'The Linux Foundation', badge:'🐧', credentialUrl:'https://www.credly.com/badges/6b6f01a9-3075-42cf-9097-47f4a1036982'},
     ] as readonly Certification[],
   },
   contact: {

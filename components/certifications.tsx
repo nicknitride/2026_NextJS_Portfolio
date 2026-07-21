@@ -40,6 +40,7 @@ export default function Certifications() {
               {certification.credentialUrl && (
                 <a
                   href={certification.credentialUrl}
+                  target='_blank'
                   className="mt-6 inline-flex rounded-sm font-mono text-xs font-semibold uppercase tracking-[0.12em] text-[var(--signal)] transition-colors hover:text-foreground focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-ring"
                 >
                   {certifications.credentialLabel.replace('{name}', certification.name)} <span aria-hidden="true">→</span>

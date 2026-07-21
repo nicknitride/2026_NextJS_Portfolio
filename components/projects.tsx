@@ -9,7 +9,7 @@ export default function Projects() {
   return (
     <section id="projects" aria-labelledby="projects-title" className="px-6 py-20 sm:py-28">
       <div className="max-w-6xl mx-auto">
-        <p className="section-kicker mb-3">03 / Selected work</p>
+        <p className="section-kicker mb-3">04 / Selected work</p>
         <h2 id="projects-title" className="mb-12 text-4xl font-bold tracking-tight sm:text-5xl">{projects.title}</h2>
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -78,8 +78,8 @@ const visualClasses = {
 } as const
 
 const visualMarks = {
-  fitness: '01',
-  health: '+',
+  fitness: '🏋',
+  health: '💊',
   travel: '✦',
   deploy: '⌘',
 } as const

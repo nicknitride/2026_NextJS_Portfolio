@@ -28,7 +28,7 @@ export const portfolioContent = {
   },
   hero: {
     headingStart: 'Software Engineer @ GCash',
-    upperText: 'Fullstack Web Developer | Linux and FOSS Enthusiast | Java & Spring',
+    upperText: 'Software Engineer | Spring Boot | React | Linux',
     summary:
       'Building secure, practical web solutions with React, TypeScript, and backend services.',
     terminal: {
@@ -84,7 +84,7 @@ export const portfolioContent = {
   about: {
     title: 'About',
     paragraphs: [
-      'My work focuses on web development, backend services, and practical React solutions for business use cases.',
+      'My work centers around building maintainable web applications and backend systems with a focus on security, scalability, and practical business requirements.',
       'I enjoy turning requirements, API specifications, and user needs into maintainable software with a strong foundation in functional design and client requirement analysis.',
     ],
     interestsTitle: 'Areas of Interest',
@@ -133,7 +133,7 @@ export const portfolioContent = {
         category: 'Full-stack web application',
         visual: 'fitness',
         description:
-          'A full-stack fitness and nutrition tracker with encrypted accounts and separated user data.',
+          'Full-stack fitness platform featuring secure authentication, personalized nutrition tracking, and separated user data built with React, Express, and MySQL.',
         technologies: ['Vite', 'TypeScript', 'React', 'MySQL', 'Express.js'],
         link:'https://github.com/nicknitride/intellifit_project',
         image: intelliFitImage,
@@ -176,13 +176,13 @@ export const portfolioContent = {
     title: 'Technical Skills',
     categories: [
       { category: 'Languages', skills: ['TypeScript', 'Python', 'Java', 'Bash'] },
-      { category: 'Web Development', skills: ['React', 'Node.js', 'Django', 'REST APIs'] },
+      { category: 'Web Development', skills: ['React', 'Node.js', 'Django', 'REST APIs', 'Spring Boot'] },
       { category: 'Data', skills: ['MySQL', 'PostgreSQL'] },
       { category: 'Tools', skills: ['Docker', 'Figma', 'Git'] },
     ],
   },
   certifications: {
-    eyebrow: '05 / Credentials',
+    eyebrow: '03 / Credentials',
     title: 'Certifications',
     issuerLabel: 'Issued by',
     issuedAtLabel: 'Issued',

@@ -8,18 +8,18 @@ import { portfolioContent } from '@/lib/portfolio-content';
 const links = [
   { href: '#about', label: 'About' },
   { href: '#experience', label: 'Experience' },
+  {href: '#certifications', label:"Certifications"},
   { href: '#projects', label: 'Projects' },
   { href: '#skills', label: 'Skills' },
-  {href: '#certifications', label:"Certifications"},
   { href: '#contact', label: 'Contact' },
 ]
 
 const contactDisabledLinks = [
   { href: '#about', label: 'About' },
   { href: '#experience', label: 'Experience' },
+  {href: '#certifications', label:"Certifications"},
   { href: '#projects', label: 'Projects' },
   { href: '#skills', label: 'Skills' },
-  {href: '#certifications', label:"Certifications"},
 ]
 
 

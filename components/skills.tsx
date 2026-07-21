@@ -8,7 +8,7 @@ export default function Skills() {
   return (
     <section id="skills" aria-labelledby="skills-title" className="px-6 py-20 sm:py-28">
       <div className="max-w-4xl mx-auto">
-        <p className="section-kicker mb-3">04 / Toolkit</p>
+        <p className="section-kicker mb-3">05 / Toolkit</p>
         <h2 id="skills-title" className="mb-12 text-4xl font-bold tracking-tight sm:text-5xl">{skills.title}</h2>
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">

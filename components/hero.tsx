@@ -10,8 +10,8 @@ export default function Hero() {
     <section className="relative flex min-h-screen items-center justify-center overflow-hidden px-6 py-20">
       <div className="hero-grid absolute inset-0 pointer-events-none" />
       
-      <div className="relative z-10 grid w-full max-w-6xl items-center gap-12 lg:grid-cols-[minmax(0,1.2fr)_minmax(22rem,0.8fr)]">
-        <div className="space-y-9">
+      <div className="relative z-10 grid w-full max-w-6xl items-center gap-12 lg:grid-cols-[minmax(0,1.2fr)_minmax(22rem,0.8fr)] lg:gap-10 xl:gap-14">
+        <div className="min-w-0 space-y-9">
           <div className="space-y-5">
             <div className="flex items-center gap-3">
               <span className="grid size-10 place-items-center rounded-xl border border-accent/40 bg-accent/10 font-mono text-sm font-bold text-accent">NP</span>
@@ -44,7 +44,9 @@ export default function Hero() {
             ))}
           </div>
         </div>
-        <DecorativeTerminal terminal={hero.terminal} />
+        <div className="hidden min-w-0 lg:block">
+          <DecorativeTerminal terminal={hero.terminal} />
+        </div>
       </div>
     </section>
   )

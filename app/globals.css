@@ -224,6 +224,10 @@ section[id], footer[id] {
   will-change: transform;
 }
 
+.terminal-window {
+  contain: inline-size;
+}
+
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after {
     animation-duration: 0.01ms !important;

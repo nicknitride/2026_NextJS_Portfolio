@@ -184,10 +184,12 @@ export const portfolioContent = {
   certifications: {
     eyebrow: '05 / Credentials',
     title: 'Certifications',
-    credentialLabel: 'View credential',
+    issuerLabel: 'Issued by',
+    issuedAtLabel: 'Issued',
+    credentialLabel: 'View {name} credential',
     entries: [
-      { name: 'OCA 8' },
-      { name: 'KCNA' },
+      { name: 'OCA 8' , issuedAt:'2025', issuer:'Oracle'},
+      { name: 'KCNA' , issuedAt:'2025', issuer:'The Linux Foundation'},
     ] as readonly Certification[],
   },
   contact: {

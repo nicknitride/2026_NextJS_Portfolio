@@ -61,9 +61,10 @@ Create `components/certifications.tsx` that renders `portfolioContent.certificat
 
 ### P1 — Responsive design and accessibility
 
-- [ ] Add terminal styling and responsive constraints in the appropriate component classes or `app/globals.css`.
-- [ ] Confirm the terminal is decorative (`aria-hidden`) and does not create horizontal overflow on mobile.
-- [ ] Verify terminal-token contrast, certification link labels, and keyboard focus styles.
+- [x] Add terminal styling and responsive constraints in the appropriate component classes or `app/globals.css`.
+- [x] Confirm the terminal is decorative (`aria-hidden`) and does not create horizontal overflow on mobile.
+- [x] Verify terminal-token contrast, certification link labels, and keyboard focus styles.
+- [x] Improve the certifications component design: establish a stronger visual hierarchy, add optional badge/issuer treatments, and align card styling with the portfolio’s existing visual system.
 
 ### P2 — Quality assurance
 

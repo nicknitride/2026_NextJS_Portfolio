@@ -198,7 +198,7 @@ export const portfolioContent = {
     description:
       'I am open to discussing software engineering opportunities and collaborative projects.',
     emailLabel: 'Email',
-    emailDescription: 'Send me a message',
+    footerMessage: 'Back to top ↑',
     footer: `© ${new Date().getFullYear()} Nicholo Pardines. All rights reserved.`,
   },
 } as const

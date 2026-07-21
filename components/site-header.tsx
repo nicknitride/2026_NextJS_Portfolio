@@ -2,19 +2,9 @@
 
 import { useEffect, useState } from 'react'
 import { portfolioContent } from '@/lib/portfolio-content';
-  const isContactEnabled = process.env.NEXT_PUBLIC_CONTACT_ENABLED === 'true';
   const{heroComponent} = portfolioContent;
 
 const links = [
-  { href: '#about', label: 'About' },
-  { href: '#experience', label: 'Experience' },
-  {href: '#certifications', label:"Certifications"},
-  { href: '#projects', label: 'Projects' },
-  { href: '#skills', label: 'Skills' },
-  { href: '#contact', label: 'Contact' },
-]
-
-const contactDisabledLinks = [
   { href: '#about', label: 'About' },
   { href: '#experience', label: 'Experience' },
   {href: '#certifications', label:"Certifications"},
@@ -28,16 +18,9 @@ export default function SiteHeader() {
 
   useEffect(() => {
     let sections:HTMLElement[];
-    if(isContactEnabled){
      sections = links
       .map(({ href }) => document.querySelector(href))
       .filter((section): section is HTMLElement => section instanceof HTMLElement)
-    }
-    else{
-      sections = contactDisabledLinks
-      .map(({ href }) => document.querySelector(href))
-      .filter((section): section is HTMLElement => section instanceof HTMLElement)
-    }
     const observer = new IntersectionObserver(
       (entries) => {
         const current = entries
@@ -63,7 +46,7 @@ export default function SiteHeader() {
         <nav aria-label="Primary navigation" className="min-w-0 overflow-x-auto">
           <ul className="flex min-w-max items-center gap-1">
             {
-            (isContactEnabled ? links: contactDisabledLinks).map((link) => {
+            (links).map((link) => {
               const isActive = activeId === link.href.slice(1)
               return (
                 <li key={link.href}>

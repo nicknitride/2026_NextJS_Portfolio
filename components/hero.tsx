@@ -7,7 +7,7 @@ export default function Hero() {
   const { hero, navigation, person } = portfolioContent
 
   return (
-    <section className="relative flex min-h-screen items-center justify-center overflow-hidden px-6 py-20">
+    <section id='hero'className="relative flex min-h-screen items-center justify-center overflow-hidden px-6 py-20">
       <div className="hero-grid absolute inset-0 pointer-events-none" />
       
       <div className="relative z-10 grid w-full max-w-6xl items-center gap-12 lg:grid-cols-[minmax(0,1.2fr)_minmax(22rem,0.8fr)] lg:gap-10 xl:gap-14">

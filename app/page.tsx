@@ -4,8 +4,8 @@ import Experience from '@/components/experience'
 import Projects from '@/components/projects'
 import Skills from '@/components/skills'
 import Certifications from '@/components/certifications'
-import Contact from '@/components/contact'
 import SiteHeader from '@/components/site-header'
+import Footer from '@/components/footer'
 
 export default function Home() {
   return (
@@ -19,7 +19,7 @@ export default function Home() {
       <Certifications />
       <Projects />
       <Skills />
-      <Contact />
+      <Footer />
       </main>
     </>
   )

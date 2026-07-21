@@ -1,6 +1,7 @@
 'use client'
 
 import { portfolioContent } from '@/lib/portfolio-content'
+import DecorativeTerminal from '@/components/decorative-terminal'
 
 export default function Hero() {
   const { hero, navigation, person } = portfolioContent
@@ -9,10 +10,9 @@ export default function Hero() {
     <section className="relative flex min-h-screen items-center justify-center overflow-hidden px-6 py-20">
       <div className="hero-grid absolute inset-0 pointer-events-none" />
       
-      <div className="max-w-4xl w-full relative z-10">
+      <div className="relative z-10 grid w-full max-w-6xl items-center gap-12 lg:grid-cols-[minmax(0,1.2fr)_minmax(22rem,0.8fr)]">
         <div className="space-y-9">
           <div className="space-y-5">
-            {/* TODO : add a terminal to the right side of the hero */}
             <div className="flex items-center gap-3">
               <span className="grid size-10 place-items-center rounded-xl border border-accent/40 bg-accent/10 font-mono text-sm font-bold text-accent">NP</span>
               <p className="section-kicker">{hero.upperText}</p>
@@ -44,6 +44,7 @@ export default function Hero() {
             ))}
           </div>
         </div>
+        <DecorativeTerminal terminal={hero.terminal} />
       </div>
     </section>
   )

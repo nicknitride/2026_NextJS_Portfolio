@@ -1,6 +1,14 @@
 import intelliFitImage from '@/assets/images/intellifit.png'
 import cognipillImage from '@/assets/images/cognipill.png'
 
+export type Certification = {
+  name: string
+  issuer?: string
+  issuedAt?: string
+  credentialUrl?: string
+  badge?: string
+}
+
 export const portfolioContent = {
   heroComponent:{
     herotext:'N. Pardines 🐈',
@@ -23,6 +31,55 @@ export const portfolioContent = {
     upperText: 'Fullstack Web Developer | Linux and FOSS Enthusiast | Java & Spring',
     summary:
       'Building secure, practical web solutions with React, TypeScript, and backend services.',
+    terminal: {
+      windowTitle: 'portfolio@main',
+      prompt: '$',
+      entries: [
+        {
+          command: 'git status',
+          commandTokens: [{ text: 'git', tone: 'accent' }, { text: ' status', tone: 'default' }],
+          output: [
+            [{ text: 'On branch main', tone: 'muted' }],
+            [{ text: 'Your branch is up to date.', tone: 'success' }],
+          ],
+        },
+        {
+          command: 'docker compose up',
+          commandTokens: [{ text: 'docker', tone: 'accent' }, { text: ' compose up', tone: 'default' }],
+          output: [
+            [{ text: '✔ ', tone: 'success' }, { text: 'database', tone: 'default' }],
+            [{ text: '✔ ', tone: 'success' }, { text: 'backend', tone: 'default' }],
+            [{ text: '✔ ', tone: 'success' }, { text: 'frontend', tone: 'default' }],
+          ],
+        },
+        {
+          command: './gradlew test',
+          commandTokens: [{ text: './gradlew', tone: 'accent' }, { text: ' test', tone: 'default' }],
+          output: [[{ text: 'BUILD SUCCESSFUL', tone: 'success' }]],
+        },
+        {
+          command: 'pnpm build',
+          commandTokens: [{ text: 'pnpm', tone: 'accent' }, { text: ' build', tone: 'default' }],
+          output: [[{ text: '✓ ', tone: 'success' }, { text: 'Compiled successfully', tone: 'success' }]],
+        },
+        {
+          command: 'gh workflow run deploy.yml',
+          commandTokens: [{ text: 'gh', tone: 'accent' }, { text: ' workflow run ', tone: 'default' }, { text: 'deploy.yml', tone: 'muted' }],
+          output: [[{ text: '✓ ', tone: 'success' }, { text: 'Deployment started', tone: 'success' }]],
+        },
+        {
+          command: 'curl https://api.example.com/health',
+          commandTokens: [{ text: 'curl', tone: 'accent' }, { text: ' ', tone: 'default' }, { text: 'https://api.example.com/health', tone: 'accent' }],
+          output: [[
+            { text: '{', tone: 'muted' },
+            { text: '"status"', tone: 'accent' },
+            { text: ': ', tone: 'muted' },
+            { text: '"UP"', tone: 'success' },
+            { text: '}', tone: 'muted' },
+          ]],
+        },
+      ],
+    },
   },
   about: {
     title: 'About',
@@ -123,6 +180,15 @@ export const portfolioContent = {
       { category: 'Data', skills: ['MySQL', 'PostgreSQL'] },
       { category: 'Tools', skills: ['Docker', 'Figma', 'Git'] },
     ],
+  },
+  certifications: {
+    eyebrow: '05 / Credentials',
+    title: 'Certifications',
+    credentialLabel: 'View credential',
+    entries: [
+      { name: 'OCA 8' },
+      { name: 'KCNA' },
+    ] as readonly Certification[],
   },
   contact: {
     title: "Let's Work Together",

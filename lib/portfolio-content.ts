@@ -24,8 +24,8 @@ export type ProjectEntry = {
 }
 
 export const portfolioContent = {
-  heroComponent:{
-    herotext:'N. Pardines 🐈',
+  heroComponent: {
+    herotext: 'N. Pardines 🐈',
   },
   person: {
     name: 'Nicholo Pardines',
@@ -138,7 +138,7 @@ export const portfolioContent = {
   },
   projects: {
     title: 'Projects',
-    bottomHighlight:'Project Link',
+    bottomHighlight: 'Project Link',
     codeLabel: 'Project details',
     liveLabel: 'View project',
     entries: [
@@ -155,7 +155,7 @@ export const portfolioContent = {
           '💬 Grounded Chat & Citations: Interactive chat with verifiable citations pointing directly to exact source passages.',
         ],
         technologies: ['Spring Boot 3', 'Java 21', 'Next.js', 'TypeScript', 'PostgreSQL', 'pgvector', 'Ollama', 'Docker'],
-        link: 'https://github.com/nicknitride/atlas_knowledge_base',
+        link: 'https://github.com/nicknitride/atlas-knowledge-base-notebooklm-alt',
         image: atlasGif,
         isHidden: false,
       },
@@ -164,9 +164,15 @@ export const portfolioContent = {
         category: 'Full-stack web application',
         visual: 'fitness',
         description:
-          'Full-stack fitness platform featuring secure authentication, personalized nutrition tracking, and separated user data built with React, Express, and MySQL.',
-        technologies: ['Vite', 'TypeScript', 'React', 'MySQL', 'Express.js'],
-        link:'https://github.com/nicknitride/intellifit_project',
+          'Full-stack fitness platform featuring secure session authentication, daily meal and nutrition tracking, exercise logging, and data backup/restore capabilities.',
+        highlights: [
+          '🥗 Daily Nutrition & Meal Logging: Track calories, macronutrients (protein, carbs, fats), and search/add custom foods.',
+          '🏋️ Workout & Exercise Tracking: Record completed routines with sets, repetitions, weights, distance, and duration metrics.',
+          '📊 Dashboard Analytics & Profile Goals: Monitor daily target progress for calories, protein goals, weight, and height.',
+          '💾 JSON Backup & Containerized Stack: Data import/export engine built with Docker Compose (Nginx UI, Express TS API, PostgreSQL).',
+        ],
+        technologies: ['React', 'TypeScript', 'Vite', 'Express.js', 'PostgreSQL', 'Docker', 'Tailwind CSS'],
+        link: 'https://github.com/nicknitride/intellifit_project',
         image: intelliFitImage,
         isHidden: false
       },
@@ -176,9 +182,14 @@ export const portfolioContent = {
         visual: 'health',
         description:
           'A researched hardware and software pill-dispensing prototype designed to support aging populations safely and accessibly.',
+        highlights: [
+          '💊 Smart Medication Dispensing: Hardware & software prototype designed for elderly healthcare compliance.',
+          '♿ Accessibility-First Design: High-contrast interface, visual prompts, and simplified user navigation.',
+          '📋 User Research & Usability Testing: Developed through iterative user feedback and accessibility guidelines.',
+        ],
         technologies: ['Figma', 'User research', 'Usability testing', 'Accessibility'],
-        link:'https://canva.link/izu6aeqgo0q2hym',
-        image:cognipillImage,
+        link: 'https://canva.link/izu6aeqgo0q2hym',
+        image: cognipillImage,
         isHidden: false
       },
       {
@@ -188,8 +199,8 @@ export const portfolioContent = {
         description:
           'A Django-based airline ticket system built as part of a Python web-development course.',
         technologies: ['Python', 'Django'],
-        link:'',
-        isHidden:true,
+        link: '',
+        isHidden: true,
       },
       {
         title: 'Dockerized Portfolio Site',
@@ -198,8 +209,8 @@ export const portfolioContent = {
         description:
           'A personal portfolio site packaged for repeatable deployment using Docker.',
         technologies: ['Docker', 'Web deployment'],
-        link:'',
-        isHidden:true,
+        link: '',
+        isHidden: true,
       },
     ],
   },
@@ -219,8 +230,8 @@ export const portfolioContent = {
     issuedAtLabel: 'Issued',
     credentialLabel: 'View {name} credential',
     entries: [
-      { name: 'OCA 8' , issuedAt:'2025', issuer:'Oracle',badge:'☕️', credentialUrl:'https://catalog-education.oracle.com/ords/certview/sharebadge?id=B7BB67DE24C8FDEE4E0B1B27E99ACD24661165BEEC432C9AC1C98C9817CF9206'},
-      { name: 'KCNA' , issuedAt:'2025', issuer:'The Linux Foundation', badge:'🐧', credentialUrl:'https://www.credly.com/badges/6b6f01a9-3075-42cf-9097-47f4a1036982'},
+      { name: 'OCA 8', issuedAt: '2025', issuer: 'Oracle', badge: '☕️', credentialUrl: 'https://catalog-education.oracle.com/ords/certview/sharebadge?id=B7BB67DE24C8FDEE4E0B1B27E99ACD24661165BEEC432C9AC1C98C9817CF9206' },
+      { name: 'KCNA', issuedAt: '2025', issuer: 'The Linux Foundation', badge: '🐧', credentialUrl: 'https://www.credly.com/badges/6b6f01a9-3075-42cf-9097-47f4a1036982' },
     ] as readonly Certification[],
   },
   contact: {

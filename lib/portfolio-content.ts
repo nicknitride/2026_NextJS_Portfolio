@@ -1,5 +1,6 @@
 import intelliFitImage from '@/assets/images/intellifit.png'
 import cognipillImage from '@/assets/images/cognipill.png'
+import atlasGif from '@/assets/images/atlas_demo_gif.gif'
 import kcnabadge from '@/assets/badges/KCNA_badge.png'
 
 export type Certification = {
@@ -8,6 +9,18 @@ export type Certification = {
   issuedAt?: string
   credentialUrl?: string
   badge?: string
+}
+
+export type ProjectEntry = {
+  title: string
+  category: string
+  visual: string
+  description: string
+  highlights?: string[]
+  technologies: readonly string[]
+  link: string
+  image?: any
+  isHidden?: boolean
 }
 
 export const portfolioContent = {
@@ -129,6 +142,23 @@ export const portfolioContent = {
     codeLabel: 'Project details',
     liveLabel: 'View project',
     entries: [
+      {
+        title: 'Atlas Knowledge Base',
+        category: 'Privacy-First AI & RAG Engine',
+        visual: 'atlas',
+        description:
+          'A privacy-first, self-hosted AI knowledge workspace and RAG engine. Upload large documents (up to 80MB), build vector indexes, and hold grounded conversations with verifiable source citations running 100% locally.',
+        highlights: [
+          '🔒 100% Private & Self-Hosted: Zero data tracking using local Ollama models (Qwen & nomic-embed-text) or optional cloud providers.',
+          '🧠 Production RAG Engine: PostgreSQL pgvector store with HNSW indexing, chunking engine & workspace embedding identity guardrails.',
+          '🏗️ Robust Spring Boot 3 Backend: Async background ingestion pipeline (PENDING/PROCESSING/COMPLETE/FAILED) with Flyway schema migrations.',
+          '💬 Grounded Chat & Citations: Interactive chat with verifiable citations pointing directly to exact source passages.',
+        ],
+        technologies: ['Spring Boot 3', 'Java 21', 'Next.js', 'TypeScript', 'PostgreSQL', 'pgvector', 'Ollama', 'Docker'],
+        link: 'https://github.com/nicknitride/atlas_knowledge_base',
+        image: atlasGif,
+        isHidden: false,
+      },
       {
         title: 'IntelliFit',
         category: 'Full-stack web application',
